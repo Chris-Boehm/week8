@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+		<title>Stickers</title>
+	</head>
+	
+	<style>
+	
+		.sticker {
+			width: 180px;
+			height: 180px;
+	}
+
+		// add image
+		.example-1 .sticker-img {
+			background-image: url(heroes-2.png);
+		}
+
+		// add color
+		.example-2 .sticker-img {
+			background-color: #ff4a85;
+		}
+
+		// change shadow opacity
+		.example-2 .sticker-shadow {
+			opacity: 0.8;
+		}
+	
+	</style>
+	
+	<body>
+	
+		<div class="sticker example-1"></div>
+
+		<div class="sticker example-2"></div>
+
+		<script type="text/javascript" src="sticker.min.js"></script>
+		<script>
+			Sticker.init('.sticker');
+		</script>
+	
+	</body>
+	
+</html>
