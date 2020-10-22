@@ -1,0 +1,29 @@
+<html>
+	
+	<head> 
+		<title>API</title>
+	</head>
+	
+	<script>
+		
+		fetch("https://cat-fact.herokuapp.com/facts/random?").then(function(networkRequest) {
+				console.log(networkRequest);
+				return networkRequest.json();
+			}).then(function(jsonData) {
+				document.write("Cat Fact: " + JSON.stringify(jsonData.text));
+			})
+
+		
+	</script>
+	
+	
+	
+	<body>
+	
+	
+	
+	</body>
+	
+	
+	
+</html>
